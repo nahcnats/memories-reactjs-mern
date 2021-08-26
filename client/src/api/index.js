@@ -1,6 +1,10 @@
+import React from 'react';
 import axios from 'axios';
+// import appConfig from '../assets/config.json';
 
-const API = axios.create({ baseURL: process.env.REACT_APP_API_URL });
+// const API = axios.create({ baseURL: process.env.REACT_APP_API_URL });
+// const API = axios.create({ baseURL: appConfig.APP_API_URL });
+const API = axios.create({baseURL: window.Configs.APP_API_URL});
 
 API.interceptors.request.use((req) => {
   if (localStorage.getItem('profile')) {

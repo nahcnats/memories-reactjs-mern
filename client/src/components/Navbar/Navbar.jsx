@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 import decode from 'jwt-decode';
 
 import useStyles from './styles';
-import memories from '../../images/memories.png';
+import memories from '../../assets/images/memories.png';
 
 const Navbar = () => {
   const classes = useStyles();
